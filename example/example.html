@@ -1,0 +1,37 @@
+<html>
+<head>
+	<title></title>
+	<link rel='stylesheet' href='../build/build.css'>
+
+	<style>
+	* {
+		outline: none;
+	}
+
+	body {
+		background: #ddd;
+	}
+
+	</style>
+
+</head>
+<body>
+
+	<a href='#' tabindex='-1' data-show-overlay='className' data-modal-id='myModal'>show modal</a>
+
+	<div id='myModal' class='modal-dialog' tabindex='-1' role='dialog' aria-hidden='true'>
+		<div class='modal-dialog-wrapper'>
+			<h3>header</h3>
+			<p> Lorem ipsum Do sit aute minim id et quis amet eiusmod cillum consectetur ad in nisi do sunt consectetur Duis minim deserunt ut et consequat sed ullamco in minim. </p>
+			<a href='#' data-modal-close='true'>hide modal</a>
+		</div>
+	</div>
+
+	<script src='../build/build.js'></script>
+
+	<script>
+	require('modal');
+	</script>
+
+</body>
+</html>
