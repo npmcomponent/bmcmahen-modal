@@ -1291,7 +1291,6 @@ var classes = require('classes');
 var afterTransition = require('after-transition');
 var events = require('events');
 var delegate = require('delegate');
-var template = require('./template');
 var prevent = require('prevent');
 var target = require('target');
 var attr = require('get-attribute');
@@ -1381,9 +1380,6 @@ Modal.prototype.hide = function(e){
   return this;
 };
 
-});
-require.register("modal/template.js", function(exports, require, module){
-module.exports = '<div class=\'modal-dialog\' tabindex=\'-1\' role=\'dialog\' aria-hidden=\'true\'>\n  <div class=\'modal-dialog-wrapper\'>\n    <div class=\'modal-content\'></div>\n  </div>\n</div>';
 });
 
 
