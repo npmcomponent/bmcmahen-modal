@@ -11,19 +11,29 @@
 
 ## Use
 
-You can use the `data-attribute` api, much like Bootstrap. The `data-modal-id` attribute directs us to the id of the modal dialog markup. You can use `data-show-overlay` to enable an overlay, and `data-modal-close` on a button within the modal to close it.
+To use the HTML api, you need to specifically call `listen()`. The `data-modal-id` attribute directs us to the id of the modal dialog markup. Use `data-modal-close` on a button within the modal to close it.
 
 ```html
 
 <a href='#' tabindex='-1' data-show-overlay='true' data-modal-id='myModal'>show modal</a>
 
-<div id='myModal' class='modal-dialog' tabindex='-1' role='dialog' aria-hidden='true'>
-  <div class='modal-dialog-wrapper'>
-    <!-- content here -->
-    <a href='#' data-modal-close='true'>hide modal</a>
+<div id='myModal' class='modal fade' tabindex='-1' aria-labelledby='myModalLabel' role='dialog' aria-hidden='true'>
+    <div class='modal-dialog'>
+      <div class='modal-content'>
+        <div class='modal-header'>
+          <button type='button' class='close' data-modal-close='true' aria-hidden='true'>&times;</button>
+          <h4 class='modal-title' id='myMOdalLabel'>Modal title</h4>
+        </div>
+        <div class='modal-body'>
+          <h3>header</h3>
+          <p> Lorem ipsum Do sit aute minim id et quis amet eiusmod cillum consectetur ad in nisi do sunt consectetur Duis minim deserunt ut et consequat sed ullamco in minim. </p>
+        </div>
+        <div class='modal-footer'>
+          <a href='#' data-modal-close='true'>hide modal</a>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-
 ```
 
 Or you can use the Javascript API.
@@ -32,7 +42,6 @@ Or you can use the Javascript API.
 var modal = require('modal');
 var myModal = modal(document.querySelector('#myModal'));
 
-myModal.overlay(); // enable the overlay
 myModal.show(); // show the modal
 myModal.hide(); // hide the modal
 

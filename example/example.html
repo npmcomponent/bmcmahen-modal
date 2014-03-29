@@ -17,20 +17,33 @@
 </head>
 <body>
 
-	<a href='#' tabindex='-1' data-show-overlay='className' data-modal-id='myModal'>show modal</a>
+	<a href='#' tabindex='-1' data-modal-id='myModal'>show modal</a>
+	<p> Lorem ipsum Ullamco aliqua in ex ad fugiat est dolor et Ut sint sit sint fugiat amet consequat aliqua fugiat proident adipisicing in ea enim nisi incididunt laboris sit Duis ullamco ut laborum non consequat dolore eu velit dolore velit voluptate dolore officia esse elit ullamco fugiat in ea sed incididunt fugiat proident Ut Duis amet id consectetur exercitation eu eu officia sint dolor nostrud exercitation commodo voluptate qui laborum ut in id magna Ut ullamco dolor exercitation adipisicing id aute elit exercitation tempor in culpa in veniam voluptate in consectetur cupidatat et eu incididunt do voluptate nostrud consectetur culpa reprehenderit est irure quis laboris ex dolor aliquip tempor sint ad officia officia laborum culpa ad in fugiat voluptate ut Ut exercitation irure fugiat enim id reprehenderit consectetur deserunt cupidatat dolor irure in sed Ut tempor et ea pariatur officia est Ut officia sit commodo sed Excepteur nostrud irure magna id sint tempor dolor laborum fugiat ut occaecat ea nostrud voluptate proident amet id eu cupidatat Ut in consectetur irure ullamco velit non magna.</p>
+	<h1> yo yo </h1>
+	<p> Lorem ipsum Eu deserunt sint aliquip enim amet dolore ad culpa consectetur quis mollit reprehenderit fugiat sunt culpa eu et veniam minim id est tempor sit eiusmod elit dolore ea amet laborum aliquip cupidatat consequat Excepteur Ut officia dolore do eiusmod laboris nostrud consequat Excepteur do officia aute pariatur non ut sit sint cupidatat mollit incididunt consequat exercitation ea minim eiusmod ut ut Excepteur in aliqua minim esse adipisicing esse anim incididunt velit est quis laboris dolor dolor non aliquip mollit cupidatat labore occaecat in officia ad in do dolore aliquip pariatur in Ut pariatur ad commodo proident consequat amet dolore in cupidatat labore elit cupidatat cupidatat nisi minim in cupidatat amet deserunt Excepteur quis non in tempor veniam sunt adipisicing consequat Ut ad consectetur velit quis in quis proident aliqua occaecat eiusmod deserunt dolor id culpa nulla ea sint sunt aute quis occaecat proident nisi cillum id magna Ut dolor veniam.</P>
 
-	<div id='myModal' class='modal-dialog' tabindex='-1' role='dialog' aria-hidden='true'>
-		<div class='modal-dialog-wrapper'>
-			<h3>header</h3>
-			<p> Lorem ipsum Do sit aute minim id et quis amet eiusmod cillum consectetur ad in nisi do sunt consectetur Duis minim deserunt ut et consequat sed ullamco in minim. </p>
-			<a href='#' data-modal-close='true'>hide modal</a>
+	<div id='myModal' class='modal fade' tabindex='-1' aria-labelledby='myModalLabel' role='dialog' aria-hidden='true'>
+		<div class='modal-dialog'>
+			<div class='modal-content'>
+				<div class='modal-header'>
+					<button type='button' class='close' data-modal-close='true' aria-hidden='true'>&times;</button>
+					<h4 class='modal-title' id='myModalLabel'>Modal title</h4>
+				</div>
+				<div class='modal-body'>
+					<h3>header</h3>
+					<p> Lorem ipsum Do sit aute minim id et quis amet eiusmod cillum consectetur ad in nisi do sunt consectetur Duis minim deserunt ut et consequat sed ullamco in minim. </p>
+				</div>
+				<div class='modal-footer'>
+					<a href='#' data-modal-close='true'>hide modal</a>
+				</div>
+			</div>
 		</div>
 	</div>
 
 	<script src='../build/build.js'></script>
 
 	<script>
-	require('modal');
+	require('modal').listen();
 	</script>
 
 </body>
