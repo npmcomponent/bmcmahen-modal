@@ -2,14 +2,14 @@
  * Module Dependencies
  */
 
-var Emitter = require('emitter');
-var classes = require('classes');
-var afterTransition = require('after-transition');
-var events = require('events');
-var delegate = require('delegate');
-var prevent = require('prevent');
-var target = require('target');
-var attr = require('get-attribute');
+var Emitter = require('component-emitter');
+var classes = require('component-classes');
+var afterTransition = require('anthonyshort-after-transition');
+var events = require('component-events');
+var delegate = require('component-delegate');
+var prevent = require('yields-prevent');
+var target = require('bmcmahen-target');
+var attr = require('javve-get-attribute');
 var isBound;
 
 /**

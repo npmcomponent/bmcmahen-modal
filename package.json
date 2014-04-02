@@ -1,0 +1,20 @@
+{
+  "name": "bmcmahen-modal",
+  "description": "a simple modal written in vanilla javscript",
+  "version": "0.1.1",
+  "keywords": [],
+  "styles": [
+    "modal.css"
+  ],
+  "dependencies": {
+    "component-emitter": "git://github.com/npmcomponent/component-emitter.git",
+    "component-classes": "git://github.com/npmcomponent/component-classes.git",
+    "anthonyshort-after-transition": "git://github.com/npmcomponent/anthonyshort-after-transition.git",
+    "component-events": "git://github.com/npmcomponent/component-events.git",
+    "component-delegate": "git://github.com/npmcomponent/component-delegate.git",
+    "javve-get-attribute": "git://github.com/npmcomponent/javve-get-attribute.git",
+    "bmcmahen-target": "git://github.com/npmcomponent/bmcmahen-target.git",
+    "yields-prevent": "git://github.com/npmcomponent/yields-prevent.git"
+  },
+  "license": "MIT"
+}
